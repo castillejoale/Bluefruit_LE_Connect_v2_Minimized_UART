@@ -422,12 +422,15 @@ extension UartModuleViewController : UITableViewDataSource {
 
         timestampCell.timeStampLabel.text = String(format: "%@ %@", arguments: [dateString, modeString])
         
+        
         if let attributedText = UartModuleManager.attributeTextFromData(dataChunk.data, useHexMode: Preferences.uartIsInHexMode, color: color, font: UartModuleViewController.dataFont) where attributedText.length > 0 {
             timestampCell.dataLabel.attributedText = attributedText
         }
         else {
             timestampCell.dataLabel.attributedText = NSAttributedString(string: " ")        // space to maintain height
         }
+        
+        print(timestampCell.timeStampLabel.text)
  
         timestampCell.contentView.backgroundColor = indexPath.row%2 == 0 ? UIColor.whiteColor() : UIColor(hex: 0xeeeeee)
         return cell

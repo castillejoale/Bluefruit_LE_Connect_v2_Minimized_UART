@@ -46,12 +46,8 @@ class ControllerModuleViewController: ModuleViewController {
                 self.baseTableView.reloadData()
             }
             
-            // Watch
-            WatchSessionManager.sharedInstance.updateApplicationContext(.Controller)
+
             
-            DLog("register DidReceiveWatchCommand observer")
-            let notificationCenter =  NSNotificationCenter.defaultCenter()
-            notificationCenter.addObserver(self, selector: #selector(watchCommand(_:)), name: WatchSessionManager.Notifications.DidReceiveWatchCommand.rawValue, object: nil)
         }
     }
 
@@ -61,13 +57,7 @@ class ControllerModuleViewController: ModuleViewController {
         if isMovingFromParentViewController() {     // To keep streaming data when pushing a child view
             controllerData.stop()
             
-            // Watch
-            WatchSessionManager.sharedInstance.updateApplicationContext(.Connected)
-            
-            DLog("remove DidReceiveWatchCommand observer")
-            let notificationCenter =  NSNotificationCenter.defaultCenter()
-            notificationCenter.removeObserver(self, name:
-            WatchSessionManager.Notifications.DidReceiveWatchCommand.rawValue, object: nil)
+
         }
     }
     
@@ -103,29 +93,7 @@ class ControllerModuleViewController: ModuleViewController {
         contentItems = items
     }
     
-    // MARK: Notifications
-    func watchCommand(notification: NSNotification) {
-        if let message = notification.userInfo, let command = message["command"] as? String {
-            DLog("watchCommand notification: \(command)")
-            switch command {
-            case "controlPad":
-                if let tag = message["tag"]?.integerValue {
-                    sendTouchEvent(tag, isPressed: true)
-                    sendTouchEvent(tag, isPressed: false)
-                }
-                
-            case "color":
-                if  let colorUInt = message["color"] as? UInt, let color = colorFromHexUInt(colorUInt) {
-                    sendColor(color)
-                }
-                
-            default:
-                DLog("watchCommand with unknown command: \(command)")
-                break
 
-            }
-        }
-    }
 
     // MARK: - Actions
     @IBAction func onClickHelp(sender: UIBarButtonItem) {

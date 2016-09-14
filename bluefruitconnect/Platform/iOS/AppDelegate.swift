@@ -7,7 +7,7 @@
  //
  
  import UIKit
- import WatchConnectivity
+
  
  @UIApplicationMain
  class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,8 +21,6 @@
         //Preferences.resetDefaults()       // Debug Reset
         Preferences.registerDefaults()
         
-        // Watch Connectivity
-        WatchSessionManager.sharedInstance.activateWithDelegate(self)
         
         // Check if there is any update to the fimware database
         FirmwareUpdater.refreshSoftwareUpdatesDatabaseFromUrl(Preferences.updateServerUrl, completionHandler: nil)
@@ -49,8 +47,6 @@
         splitViewController.view.addSubview(splitDividerCover)
         self.splitViewController(splitViewController, willChangeToDisplayMode: splitViewController.displayMode)
         
-        // Watch Session
-        WatchSessionManager.sharedInstance.session?.sendMessage(["isActive": true], replyHandler: nil, errorHandler: nil)
         
         return true
     }
@@ -78,9 +74,6 @@
     
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        
-        // Watch Session
-        WatchSessionManager.sharedInstance.session?.sendMessage(["isActive": false], replyHandler: nil, errorHandler: nil)
         
     }
     
@@ -136,45 +129,4 @@
         }
     }
  }
- 
- // MARK: - WCSessionDelegate
- extension AppDelegate: WCSessionDelegate {
-    func sessionReachabilityDidChange(session: WCSession) {
-        DLog("sessionReachabilityDidChange: \(session.reachable ? "reachable":"not reachable")")
-        
-        if session.reachable {
-            // Update foreground status
-            let isActive = UIApplication.sharedApplication().applicationState != .Inactive
-            WatchSessionManager.sharedInstance.session?.sendMessage(["isActive": isActive], replyHandler: nil, errorHandler: nil)
-        }
-    }
-    
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
-        if message["command"] != nil {
-            DLog("watchCommand notification")
-            NSNotificationCenter.defaultCenter().postNotificationName(WatchSessionManager.Notifications.DidReceiveWatchCommand.rawValue, object: nil, userInfo:message);
-        }
-    }
-    
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        var replyValues: [String: AnyObject] = [:]
-        
-        if let command = message["command"] as? String {
-            switch command {
-            case "isActive":
-                let isActive = UIApplication.sharedApplication().applicationState != .Inactive
-                replyValues[command] = isActive
 
-            default:
-                DLog("didReceiveMessage with unknown command: \(command)")
-                break
-            }
-        }
-        
-        replyHandler(replyValues)
-    }
-    
-
- }
- 
- 
