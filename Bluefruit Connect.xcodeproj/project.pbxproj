@@ -76,7 +76,6 @@
 		A99CE0601C6E4F000051C818 /* ControllerComponentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CE05F1C6E4F000051C818 /* ControllerComponentsTableViewCell.swift */; };
 		A99CE0641C6E69090051C818 /* ISColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = A99CE0631C6E69090051C818 /* ISColorWheel.m */; };
 		A99CE0661C6E699C0051C818 /* ControllerColorWheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CE0651C6E699C0051C818 /* ControllerColorWheelViewController.swift */; };
-		A9A37C181CD6336C00008136 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37C171CD6336C00008136 /* WatchSessionManager.swift */; };
 		A9AF4E0F1CC63496002C1C12 /* NeopixelTypeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4E0E1CC63496002C1C12 /* NeopixelTypeSelectorViewController.swift */; };
 		A9AF4E121CC63562002C1C12 /* NeopixelTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9AF4E101CC63562002C1C12 /* NeopixelTypes.plist */; };
 		A9AF4E141CC641E2002C1C12 /* NeopixelTypeValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF4E131CC641E2002C1C12 /* NeopixelTypeValueTableViewCell.swift */; };
@@ -104,9 +103,8 @@
 		A9EC0FB21C6F5CF60019790F /* DfuFilesPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC0FB11C6F5CF60019790F /* DfuFilesPickerTableViewCell.swift */; };
 		A9EE1ADE1C6FB54900195028 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE1ADC1C6FB54900195028 /* Config.swift */; };
 		A9F5D8C01CD6D7F500C6A468 /* HexColorConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F5D8BF1CD6D7F500C6A468 /* HexColorConversions.swift */; };
-		DEEF88D91D88E4F7000D8768 /* Future.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEF88D71D88E4F7000D8768 /* Future.storyboard */; };
-		DEEF88DA1D88E4F7000D8768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF88D81D88E4F7000D8768 /* ViewController.swift */; };
-		DEEF88DC1D88E8ED000D8768 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF88DB1D88E8ED000D8768 /* extensions.swift */; };
+		DE7EFB471D89C7E100067D69 /* Future.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7EFB451D89C7E100067D69 /* Future.storyboard */; };
+		DE7EFB481D89C7E100067D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EFB461D89C7E100067D69 /* ViewController.swift */; };
 		E16D7F0BA37D59D34718276E /* Pods_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A61E38A345CBA9806C9D40E /* Pods_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -154,7 +152,7 @@
 		A92E067D1C6D20D000BECBBA /* MqttSettingPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MqttSettingPickerCell.swift; sourceTree = "<group>"; };
 		A92E06841C6D5EF900BECBBA /* ControllerModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerModuleViewController.swift; sourceTree = "<group>"; };
 		A92E06851C6D5EF900BECBBA /* ControllerSensorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerSensorTableViewCell.swift; sourceTree = "<group>"; };
-		A93EF7C01CE5243100706942 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		A93EF7C01CE5243100706942 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Platform/iOS/Settings.bundle; sourceTree = "<group>"; };
 		A94201F41C6A65B500C87989 /* DfuDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DfuDialogViewController.swift; sourceTree = "<group>"; };
 		A94370A61BB6384B002521F7 /* GattUUIDs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GattUUIDs.plist; sourceTree = "<group>"; };
 		A94370AB1BB6493A002521F7 /* BleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleManager.swift; sourceTree = "<group>"; };
@@ -176,9 +174,9 @@
 		A945357F1C8540DB00DF49D7 /* PeripheralDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralDetailsViewController.swift; sourceTree = "<group>"; };
 		A94535801C8540DB00DF49D7 /* ScrollingTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTabBarViewController.swift; sourceTree = "<group>"; };
 		A949AA871C5ACF19002F960B /* Adafruit Bluefruit LE Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adafruit Bluefruit LE Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A949AA9B1C5ACFAB002F960B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A949AA9C1C5ACFAB002F960B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A949AAA31C5ACFAB002F960B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A949AA9B1C5ACFAB002F960B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = iOS/AppDelegate.swift; sourceTree = "<group>"; };
+		A949AA9C1C5ACFAB002F960B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = iOS/Assets.xcassets; sourceTree = "<group>"; };
+		A949AAA31C5ACFAB002F960B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOS/Info.plist; sourceTree = "<group>"; };
 		A94B850E1BB65C48007B88C7 /* FirmwareUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirmwareUpdater.h; sourceTree = "<group>"; };
 		A94B850F1BB65C48007B88C7 /* FirmwareUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirmwareUpdater.m; sourceTree = "<group>"; };
 		A94B85111BB65C70007B88C7 /* ReleasesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleasesParser.h; sourceTree = "<group>"; };
@@ -188,7 +186,7 @@
 		A94F5A301C5AD3A4009CC9B8 /* PeripheralTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewController.swift; sourceTree = "<group>"; };
 		A94F5A341C5AD41A009CC9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A94F5A361C5AD41A009CC9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A94F5A4D1C5AE501009CC9B8 /* BluefruitConnect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BluefruitConnect-Bridging-Header.h"; sourceTree = "<group>"; };
+		A94F5A4D1C5AE501009CC9B8 /* BluefruitConnect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BluefruitConnect-Bridging-Header.h"; path = "Platform/iOS/BluefruitConnect-Bridging-Header.h"; sourceTree = "<group>"; };
 		A965674E1C7E25B0009DB0F4 /* NeopixelModuleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeopixelModuleManager.swift; sourceTree = "<group>"; };
 		A9675D821CFD19250041A6F0 /* DataDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataDownloader.h; sourceTree = "<group>"; };
 		A9675D831CFD19250041A6F0 /* DataDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataDownloader.m; sourceTree = "<group>"; };
@@ -207,7 +205,7 @@
 		A9941C171C812A9D00AD4016 /* NeopixelDefaultPalette.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NeopixelDefaultPalette.plist; sourceTree = "<group>"; };
 		A9941C1A1C812D6600AD4016 /* Color+DarkerLighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+DarkerLighter.swift"; sourceTree = "<group>"; };
 		A9941C1D1C813EF700AD4016 /* NeopixelColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeopixelColorPickerViewController.swift; sourceTree = "<group>"; };
-		A99C4DD21CF380B600B10FE2 /* Bluefruit_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Bluefruit_iOS.entitlements; sourceTree = "<group>"; };
+		A99C4DD21CF380B600B10FE2 /* Bluefruit_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Bluefruit_iOS.entitlements; path = Platform/iOS/Bluefruit_iOS.entitlements; sourceTree = "<group>"; };
 		A99CE0561C6D62AC0051C818 /* ControllerPadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerPadViewController.swift; sourceTree = "<group>"; };
 		A99CE05D1C6E1EE10051C818 /* UIImage+Tint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Tint.swift"; sourceTree = "<group>"; };
 		A99CE05F1C6E4F000051C818 /* ControllerComponentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerComponentsTableViewCell.swift; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 		A99CE0651C6E699C0051C818 /* ControllerColorWheelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerColorWheelViewController.swift; sourceTree = "<group>"; };
 		A9A2FF801C3EEA6B0039D188 /* MqttSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MqttSettings.swift; sourceTree = "<group>"; };
 		A9A2FF821C3EEA9D0039D188 /* MqttManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MqttManager.swift; sourceTree = "<group>"; };
-		A9A37C171CD6336C00008136 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		A9AF4E0E1CC63496002C1C12 /* NeopixelTypeSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeopixelTypeSelectorViewController.swift; sourceTree = "<group>"; };
 		A9AF4E101CC63562002C1C12 /* NeopixelTypes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NeopixelTypes.plist; sourceTree = "<group>"; };
 		A9AF4E131CC641E2002C1C12 /* NeopixelTypeValueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeopixelTypeValueTableViewCell.swift; sourceTree = "<group>"; };
@@ -249,9 +246,8 @@
 		B86FF3BB211A024B2AE48AD1 /* Pods-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS/Pods-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		C1A38E2241235B1ED6C49AA4 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DE24281F1D87503200A3947E /* Adafruit Bluefruit LE Connect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Adafruit Bluefruit LE Connect.entitlements"; sourceTree = "<group>"; };
-		DEEF88D71D88E4F7000D8768 /* Future.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Future.storyboard; sourceTree = "<group>"; };
-		DEEF88D81D88E4F7000D8768 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DEEF88DB1D88E8ED000D8768 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		DE7EFB451D89C7E100067D69 /* Future.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Future.storyboard; sourceTree = "<group>"; };
+		DE7EFB461D89C7E100067D69 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBA828893B1A8F67C4BBEE0F /* Pods-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS/Pods-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -450,33 +446,18 @@
 			path = PeripheralDetails;
 			sourceTree = "<group>";
 		};
-		A949AA5A1C5AC81B002F960B /* Platform */ = {
+		A949AA5A1C5AC81B002F960B /* YourApp */ = {
 			isa = PBXGroup;
 			children = (
-				A949AA5B1C5AC81B002F960B /* iOS */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		A949AA5B1C5AC81B002F960B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				DEEF88D71D88E4F7000D8768 /* Future.storyboard */,
-				DEEF88D81D88E4F7000D8768 /* ViewController.swift */,
-				DEEF88DB1D88E8ED000D8768 /* extensions.swift */,
-				A99C4DD21CF380B600B10FE2 /* Bluefruit_iOS.entitlements */,
-				A93EF7C01CE5243100706942 /* Settings.bundle */,
 				A949AA9B1C5ACFAB002F960B /* AppDelegate.swift */,
+				DE7EFB451D89C7E100067D69 /* Future.storyboard */,
+				DE7EFB461D89C7E100067D69 /* ViewController.swift */,
 				A949AA9C1C5ACFAB002F960B /* Assets.xcassets */,
 				A94F5A331C5AD41A009CC9B8 /* LaunchScreen.storyboard */,
-				A94F5A351C5AD41A009CC9B8 /* Main.storyboard */,
-				A94F5A4D1C5AE501009CC9B8 /* BluefruitConnect-Bridging-Header.h */,
 				A949AAA31C5ACFAB002F960B /* Info.plist */,
-				A94F5A2E1C5AD3A4009CC9B8 /* Controllers */,
-				A9E016C01C70D6FA00CEB54C /* Style */,
-				A987F3101C66AFA00007C58D /* Utils */,
 			);
-			path = iOS;
+			name = YourApp;
+			path = Platform;
 			sourceTree = "<group>";
 		};
 		A94B850D1BB65C48007B88C7 /* Updater */ = {
@@ -511,7 +492,8 @@
 				A9EC0FA91C6EDBE10019790F /* PinIO */,
 				A90D29C81C7E0F6D003EB6D4 /* NeoPixel */,
 			);
-			path = Controllers;
+			name = Controllers;
+			path = Platform/iOS/Controllers;
 			sourceTree = "<group>";
 		};
 		A96A79FB1C74F02F000C37E3 /* NSObject+ENHThrottledReloading */ = {
@@ -545,12 +527,8 @@
 		A982966A1BB1F5E600DD478C /* BluefruitConnect */ = {
 			isa = PBXGroup;
 			children = (
-				A9EE1ADC1C6FB54900195028 /* Config.swift */,
-				A949AA5A1C5AC81B002F960B /* Platform */,
-				A9EC0F8A1C6E99BF0019790F /* Common */,
-				A98296871BB21B5800DD478C /* Utils */,
-				A94370C11BB64959002521F7 /* External Tools */,
-				A94370A51BB6384B002521F7 /* Resources */,
+				DE7EFB431D89C63000067D69 /* BLE */,
+				A949AA5A1C5AC81B002F960B /* YourApp */,
 			);
 			name = BluefruitConnect;
 			path = bluefruitconnect;
@@ -571,7 +549,6 @@
 				A91F9E8C1C650C31007656B7 /* LocalizationManager.swift */,
 				A9BEA6411C6690E6005F54D6 /* CocoaCompatibility.swift */,
 				A96A7A061C74F329000C37E3 /* Synchronize.swift */,
-				A9A37C171CD6336C00008136 /* WatchSessionManager.swift */,
 				A9D04AD71CD655C10061DC74 /* HandoffManager.swift */,
 			);
 			path = Utils;
@@ -584,7 +561,8 @@
 				A99CE05D1C6E1EE10051C818 /* UIImage+Tint.swift */,
 				A92088B51C73910D002FF8E8 /* UIImage+Color.swift */,
 			);
-			path = Utils;
+			name = Utils;
+			path = Platform/iOS/Utils;
 			sourceTree = "<group>";
 		};
 		A99CE0611C6E69090051C818 /* ios-color-wheel */ = {
@@ -623,7 +601,8 @@
 				A9E016C11C70D72900CEB54C /* StyledSubview.swift */,
 				A92088B11C727CD5002FF8E8 /* StyledButton.swift */,
 			);
-			path = Style;
+			name = Style;
+			path = Platform/iOS/Style;
 			sourceTree = "<group>";
 		};
 		A9EC0F871C6E87120019790F /* GradientView */ = {
@@ -689,6 +668,33 @@
 				B86FF3BB211A024B2AE48AD1 /* Pods-watchOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE7EFB431D89C63000067D69 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				DE7EFB441D89C65D00067D69 /* iOS */,
+				A9EC0F8A1C6E99BF0019790F /* Common */,
+				A98296871BB21B5800DD478C /* Utils */,
+				A94370C11BB64959002521F7 /* External Tools */,
+				A94370A51BB6384B002521F7 /* Resources */,
+			);
+			name = BLE;
+			sourceTree = "<group>";
+		};
+		DE7EFB441D89C65D00067D69 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A99C4DD21CF380B600B10FE2 /* Bluefruit_iOS.entitlements */,
+				A93EF7C01CE5243100706942 /* Settings.bundle */,
+				A9EE1ADC1C6FB54900195028 /* Config.swift */,
+				A94F5A4D1C5AE501009CC9B8 /* BluefruitConnect-Bridging-Header.h */,
+				A94F5A351C5AD41A009CC9B8 /* Main.storyboard */,
+				A94F5A2E1C5AD3A4009CC9B8 /* Controllers */,
+				A9E016C01C70D6FA00CEB54C /* Style */,
+				A987F3101C66AFA00007C58D /* Utils */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -765,7 +771,7 @@
 				A93EF7C21CE5243100706942 /* Settings.bundle in Resources */,
 				A94F5A381C5AD41A009CC9B8 /* Main.storyboard in Resources */,
 				A9AF4E121CC63562002C1C12 /* NeopixelTypes.plist in Resources */,
-				DEEF88D91D88E4F7000D8768 /* Future.storyboard in Resources */,
+				DE7EFB471D89C7E100067D69 /* Future.storyboard in Resources */,
 				A91F9E931C65179E007656B7 /* Localizable.strings in Resources */,
 				A9941C161C80F41300AD4016 /* NeopixelBoards.plist in Resources */,
 				A9AF4E261CC7E8C0002C1C12 /* Neopixel in Resources */,
@@ -835,11 +841,9 @@
 				A91F839F1C68F0790023C168 /* UartSettingsViewController.swift in Sources */,
 				A9E016C21C70D72900CEB54C /* StyledSubview.swift in Sources */,
 				A94F5A491C5AE3D8009CC9B8 /* ReleasesParser.m in Sources */,
-				DEEF88DC1D88E8ED000D8768 /* extensions.swift in Sources */,
 				A90D29CA1C7E108E003EB6D4 /* NeopixelModuleViewController.swift in Sources */,
 				A9EC0F951C6E99BF0019790F /* DfuUpdateProcess.swift in Sources */,
 				A9AF4E141CC641E2002C1C12 /* NeopixelTypeValueTableViewCell.swift in Sources */,
-				A9A37C181CD6336C00008136 /* WatchSessionManager.swift in Sources */,
 				A91F9EBC1C666E6D007656B7 /* MqttSettings.swift in Sources */,
 				A94535821C8540DB00DF49D7 /* PeripheralDetailsCollectionViewCell.swift in Sources */,
 				A94F5A431C5AE28C009CC9B8 /* DFUOperationsDetails.m in Sources */,
@@ -878,6 +882,7 @@
 				A96567501C7E25B0009DB0F4 /* NeopixelModuleManager.swift in Sources */,
 				A9EC0F9F1C6E99BF0019790F /* UartModuleManager.swift in Sources */,
 				A9675D8A1CFD19E60041A6F0 /* DeviceInfoData.m in Sources */,
+				DE7EFB481D89C7E100067D69 /* ViewController.swift in Sources */,
 				A9AF4E0F1CC63496002C1C12 /* NeopixelTypeSelectorViewController.swift in Sources */,
 				A94201F51C6A65B500C87989 /* DfuDialogViewController.swift in Sources */,
 				A92E067A1C6D18DF00BECBBA /* MqttSettingsValueAndSelector.swift in Sources */,
@@ -911,7 +916,6 @@
 				A99CE0641C6E69090051C818 /* ISColorWheel.m in Sources */,
 				A9EC0F971C6E99BF0019790F /* PeripheralList.swift in Sources */,
 				A94F5A3E1C5AE25B009CC9B8 /* UartDataExport.swift in Sources */,
-				DEEF88DA1D88E4F7000D8768 /* ViewController.swift in Sources */,
 				A91F839D1C68F06C0023C168 /* UartModuleViewController.swift in Sources */,
 				A94F5A321C5AD3A4009CC9B8 /* PeripheralTableViewController.swift in Sources */,
 				A92E06781C6D15A300BECBBA /* MqttSettingsHeaderCell.swift in Sources */,
@@ -940,6 +944,7 @@
 				A94F5A341C5AD41A009CC9B8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		A94F5A351C5AD41A009CC9B8 /* Main.storyboard */ = {
@@ -948,6 +953,7 @@
 				A94F5A361C5AD41A009CC9B8 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Platform/iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
