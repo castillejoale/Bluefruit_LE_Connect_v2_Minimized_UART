@@ -95,7 +95,7 @@ class UartManager: NSObject {
     }
 
     func sendChunk(dataChunk: UartDataChunk) {
-
+        
         if let txCharacteristic = txCharacteristic, blePeripheral = blePeripheral {
             let data = dataChunk.data
             
@@ -256,6 +256,7 @@ extension UartManager: CBPeripheralDelegate {
 */
     }
 
+    
     func peripheral(peripheral: CBPeripheral, didUpdateValueForCharacteristic characteristic: CBCharacteristic, error: NSError?) {
         
         guard blePeripheral != nil else {

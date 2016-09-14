@@ -123,7 +123,8 @@ class PeripheralTableViewController: UITableViewController {
     }
     
     func didConnectToPeripheral(notification : NSNotification) {
-
+        // Watch
+        WatchSessionManager.sharedInstance.updateApplicationContext(.Connected)
         
         // Connection is managed here if the device is in compact mode
         let isFullScreen = UIScreen.mainScreen().traitCollection.horizontalSizeClass == .Compact
@@ -176,7 +177,8 @@ class PeripheralTableViewController: UITableViewController {
     }
     
     func didDisconnectFromPeripheral(notification : NSNotification) {
-
+        // Watch
+        WatchSessionManager.sharedInstance.updateApplicationContext(.Scan)
 
         //
         dispatch_async(dispatch_get_main_queue(), {[unowned self] in
@@ -244,7 +246,8 @@ class PeripheralTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+        // Hack to update watch when the cell count changes
+        WatchSessionManager.sharedInstance.updateApplicationContext(.Scan)
         
         // Calculate num cells
         cachedNumOfTableItems = BleManager.sharedInstance.blePeripheralsCount()
