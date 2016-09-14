@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     private var peripheralList = PeripheralList()
     private let uartData = UartModuleManager()
 
-  
+    //UI
     @IBOutlet var statusBLELabel: UILabel!
+    @IBOutlet var lastMessageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -305,6 +306,17 @@ extension ViewController: CBPeripheralDelegate {
 extension ViewController: UartModuleDelegate {
     
     func addChunkToUI(dataChunk : UartDataChunk) {
+        
+        //IF TEXT, it could be other thing.
+        let resstr = NSString(data: dataChunk.data, encoding: NSUTF8StringEncoding)
+        print(resstr!);
+        
+        self.lastMessageLabel.text = resstr! as String;
+        
+        
+
+        
+        
 //        // Check that the view has been initialized before updating UI
 //        guard isViewLoaded() && view.window != nil &&  baseTableView != nil else {
 //            return
