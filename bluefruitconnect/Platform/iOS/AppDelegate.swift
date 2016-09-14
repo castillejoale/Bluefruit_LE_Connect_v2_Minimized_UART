@@ -21,31 +21,42 @@
         //Preferences.resetDefaults()       // Debug Reset
         Preferences.registerDefaults()
         
-        
         // Check if there is any update to the fimware database
         FirmwareUpdater.refreshSoftwareUpdatesDatabaseFromUrl(Preferences.updateServerUrl, completionHandler: nil)
         
-        // Setup SpliView
-        let splitViewController = self.window!.rootViewController as! UISplitViewController
-        splitViewController.delegate = self
+
+        //Set window
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds) //allocate window
         
-        // Style
-        let navigationBarAppearance = UINavigationBar.appearance()
-        navigationBarAppearance.barTintColor = UIColor.blackColor()
-        //        navigationBarAppearance.alpha = 0.1
-        navigationBarAppearance.translucent = true
-        navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
-        /*
-         let tabBarAppearance = UITabBar.appearance()
-         tabBarAppearance.barTintColor = UIColor.blackColor()
-         */
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Future", bundle: nil)
+        let yourVC = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController")
+        self.window!.rootViewController = yourVC
         
-        // Hack to hide the white split divider
-        splitViewController.view.backgroundColor = UIColor.darkGrayColor()
-        splitDividerCover.backgroundColor = UIColor.darkGrayColor()
-        splitViewController.view.addSubview(splitDividerCover)
-        self.splitViewController(splitViewController, willChangeToDisplayMode: splitViewController.displayMode)
+//        //Get view controller
+//        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let yourVC = mainStoryboard.instantiateViewControllerWithIdentifier("SplitViewController")
+//        self.window!.rootViewController = yourVC
+//        
+//        // Setup SpliView
+//        let splitViewController = self.window!.rootViewController as! UISplitViewController
+//        splitViewController.delegate = self
+//
+//        // Style
+//        let navigationBarAppearance = UINavigationBar.appearance()
+//        navigationBarAppearance.barTintColor = UIColor.blackColor()
+//        //        navigationBarAppearance.alpha = 0.1
+//        navigationBarAppearance.translucent = true
+//        navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+//
+//        // Hack to hide the white split divider
+//        splitViewController.view.backgroundColor = UIColor.darkGrayColor()
+//        splitDividerCover.backgroundColor = UIColor.darkGrayColor()
+//        splitViewController.view.addSubview(splitDividerCover)
+//        self.splitViewController(splitViewController, willChangeToDisplayMode: splitViewController.displayMode)
+//        
+        
+        self.window!.makeKeyAndVisible()
         
         
         return true
@@ -129,4 +140,4 @@
         }
     }
  }
-
+ 

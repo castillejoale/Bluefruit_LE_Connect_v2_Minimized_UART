@@ -104,6 +104,9 @@
 		A9EC0FB21C6F5CF60019790F /* DfuFilesPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC0FB11C6F5CF60019790F /* DfuFilesPickerTableViewCell.swift */; };
 		A9EE1ADE1C6FB54900195028 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE1ADC1C6FB54900195028 /* Config.swift */; };
 		A9F5D8C01CD6D7F500C6A468 /* HexColorConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F5D8BF1CD6D7F500C6A468 /* HexColorConversions.swift */; };
+		DEEF88D91D88E4F7000D8768 /* Future.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEF88D71D88E4F7000D8768 /* Future.storyboard */; };
+		DEEF88DA1D88E4F7000D8768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF88D81D88E4F7000D8768 /* ViewController.swift */; };
+		DEEF88DC1D88E8ED000D8768 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF88DB1D88E8ED000D8768 /* extensions.swift */; };
 		E16D7F0BA37D59D34718276E /* Pods_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A61E38A345CBA9806C9D40E /* Pods_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -246,6 +249,9 @@
 		B86FF3BB211A024B2AE48AD1 /* Pods-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS/Pods-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		C1A38E2241235B1ED6C49AA4 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DE24281F1D87503200A3947E /* Adafruit Bluefruit LE Connect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Adafruit Bluefruit LE Connect.entitlements"; sourceTree = "<group>"; };
+		DEEF88D71D88E4F7000D8768 /* Future.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Future.storyboard; sourceTree = "<group>"; };
+		DEEF88D81D88E4F7000D8768 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEEF88DB1D88E8ED000D8768 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		EBA828893B1A8F67C4BBEE0F /* Pods-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS/Pods-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -455,6 +461,9 @@
 		A949AA5B1C5AC81B002F960B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DEEF88D71D88E4F7000D8768 /* Future.storyboard */,
+				DEEF88D81D88E4F7000D8768 /* ViewController.swift */,
+				DEEF88DB1D88E8ED000D8768 /* extensions.swift */,
 				A99C4DD21CF380B600B10FE2 /* Bluefruit_iOS.entitlements */,
 				A93EF7C01CE5243100706942 /* Settings.bundle */,
 				A949AA9B1C5ACFAB002F960B /* AppDelegate.swift */,
@@ -756,6 +765,7 @@
 				A93EF7C21CE5243100706942 /* Settings.bundle in Resources */,
 				A94F5A381C5AD41A009CC9B8 /* Main.storyboard in Resources */,
 				A9AF4E121CC63562002C1C12 /* NeopixelTypes.plist in Resources */,
+				DEEF88D91D88E4F7000D8768 /* Future.storyboard in Resources */,
 				A91F9E931C65179E007656B7 /* Localizable.strings in Resources */,
 				A9941C161C80F41300AD4016 /* NeopixelBoards.plist in Resources */,
 				A9AF4E261CC7E8C0002C1C12 /* Neopixel in Resources */,
@@ -825,6 +835,7 @@
 				A91F839F1C68F0790023C168 /* UartSettingsViewController.swift in Sources */,
 				A9E016C21C70D72900CEB54C /* StyledSubview.swift in Sources */,
 				A94F5A491C5AE3D8009CC9B8 /* ReleasesParser.m in Sources */,
+				DEEF88DC1D88E8ED000D8768 /* extensions.swift in Sources */,
 				A90D29CA1C7E108E003EB6D4 /* NeopixelModuleViewController.swift in Sources */,
 				A9EC0F951C6E99BF0019790F /* DfuUpdateProcess.swift in Sources */,
 				A9AF4E141CC641E2002C1C12 /* NeopixelTypeValueTableViewCell.swift in Sources */,
@@ -900,6 +911,7 @@
 				A99CE0641C6E69090051C818 /* ISColorWheel.m in Sources */,
 				A9EC0F971C6E99BF0019790F /* PeripheralList.swift in Sources */,
 				A94F5A3E1C5AE25B009CC9B8 /* UartDataExport.swift in Sources */,
+				DEEF88DA1D88E4F7000D8768 /* ViewController.swift in Sources */,
 				A91F839D1C68F06C0023C168 /* UartModuleViewController.swift in Sources */,
 				A94F5A321C5AD3A4009CC9B8 /* PeripheralTableViewController.swift in Sources */,
 				A92E06781C6D15A300BECBBA /* MqttSettingsHeaderCell.swift in Sources */,

@@ -12,7 +12,7 @@ import CoreBluetooth
 class BleManager : NSObject, CBCentralManagerDelegate {
     
     // Configuration
-    static let kStopScanningWhenConnectingToPeripheral = false
+    static let kStopScanningWhenConnectingToPeripheral = true
     static let kUseBakgroundQueue = true
     static let kAlwaysAllowDuplicateKeys = true
     
