@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    //Your BLE UUID
+//    private let yourUUID = "4B7754C0-5F9B-8CE3-EF73-322C585373DE"
+    private let yourUUID = "BD55E1A5-9E0B-F7B8-A113-6EA26EDBF2B1"
 
     //UI
     @IBOutlet var statusBLELabel: UILabel!
@@ -77,12 +80,11 @@ class ViewController: UIViewController
     
     func didDiscoverPeripheral(notification : NSNotification)
     {
-        print(peripheralList.blePeripherals)
-        
         //Connecting, not connected
         if(BleManager.sharedInstance.blePeripheralConnecting == nil){
-            if(peripheralList.blePeripherals.contains("4B7754C0-5F9B-8CE3-EF73-322C585373DE")){
-                peripheralList.connectToPeripheral("4B7754C0-5F9B-8CE3-EF73-322C585373DE")
+//            print(peripheralList)
+            if(peripheralList.blePeripherals.contains(yourUUID)){
+                peripheralList.connectToPeripheral(yourUUID)
             }
         }
     }
@@ -185,10 +187,9 @@ extension ViewController: UartModuleDelegate {
     {
         //If the message is received (RX) and not (sent) TX
         if(dataChunk.mode == UartDataChunk.TransferMode.RX){
-            let resstr = NSString(data: dataChunk.data, encoding: NSUTF8StringEncoding)
-            print(resstr!);
-            
-            self.lastMessageLabel.text = resstr! as String;
+            if let receivedMessage = NSString(data: dataChunk.data, encoding: NSUTF8StringEncoding) {
+                self.lastMessageLabel.text = receivedMessage as String;
+            }
         }
     }
 

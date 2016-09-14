@@ -290,9 +290,9 @@
 		B86FF3BB211A024B2AE48AD1 /* Pods-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS/Pods-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		C1A38E2241235B1ED6C49AA4 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DADD3EE2F104E4EAEC8BF080 /* Pods_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE7EFB4F1D89FBA000067D69 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE7EFB511D89FCD500067D69 /* Future.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Future.storyboard; sourceTree = "<group>"; };
-		DE7EFB531D89FD1D00067D69 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE7EFB4F1D89FBA000067D69 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = bluefruitconnect/AppDelegate.swift; sourceTree = "<group>"; };
+		DE7EFB511D89FCD500067D69 /* Future.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Future.storyboard; path = bluefruitconnect/Future.storyboard; sourceTree = "<group>"; };
+		DE7EFB531D89FD1D00067D69 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = bluefruitconnect/ViewController.swift; sourceTree = "<group>"; };
 		EBA828893B1A8F67C4BBEE0F /* Pods-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS/Pods-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -653,6 +653,9 @@
 		A982965F1BB1F5E600DD478C = {
 			isa = PBXGroup;
 			children = (
+				DE7EFB4F1D89FBA000067D69 /* AppDelegate.swift */,
+				DE7EFB511D89FCD500067D69 /* Future.storyboard */,
+				DE7EFB531D89FD1D00067D69 /* ViewController.swift */,
 				A982966A1BB1F5E600DD478C /* BluefruitConnect */,
 				A98296691BB1F5E600DD478C /* Products */,
 				B12E2D0785DB111BB749DADE /* Pods */,
@@ -671,9 +674,6 @@
 		A982966A1BB1F5E600DD478C /* BluefruitConnect */ = {
 			isa = PBXGroup;
 			children = (
-				DE7EFB4F1D89FBA000067D69 /* AppDelegate.swift */,
-				DE7EFB511D89FCD500067D69 /* Future.storyboard */,
-				DE7EFB531D89FD1D00067D69 /* ViewController.swift */,
 				A9EE1ADC1C6FB54900195028 /* Config.swift */,
 				A949AA5A1C5AC81B002F960B /* Platform */,
 				A9EC0F8A1C6E99BF0019790F /* Common */,
