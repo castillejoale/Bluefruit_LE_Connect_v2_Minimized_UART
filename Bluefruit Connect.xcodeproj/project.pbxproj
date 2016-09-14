@@ -122,8 +122,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		306E0D3C0B775E80704140AB /* Pods-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSX/Pods-OSX.debug.xcconfig"; sourceTree = "<group>"; };
-		6AC1184E322E9E9A527BB7F2 /* Pods-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSX/Pods-OSX.release.xcconfig"; sourceTree = "<group>"; };
 		7A61E38A345CBA9806C9D40E /* Pods_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D89B88F76BCB31A1B27F96 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		A903A5D91CA3622C004077DE /* HelpExportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpExportViewController.swift; sourceTree = "<group>"; };
@@ -243,12 +241,10 @@
 		A9F5D8BF1CD6D7F500C6A468 /* HexColorConversions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorConversions.swift; sourceTree = "<group>"; };
 		A9FE75711BB9CF1000F7A5BF /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
 		A9FE75721BB9CF1000F7A5BF /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
-		B86FF3BB211A024B2AE48AD1 /* Pods-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS/Pods-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		C1A38E2241235B1ED6C49AA4 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DE24281F1D87503200A3947E /* Adafruit Bluefruit LE Connect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Adafruit Bluefruit LE Connect.entitlements"; sourceTree = "<group>"; };
 		DE7EFB451D89C7E100067D69 /* Future.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Future.storyboard; sourceTree = "<group>"; };
 		DE7EFB461D89C7E100067D69 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBA828893B1A8F67C4BBEE0F /* Pods-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS/Pods-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -660,12 +656,8 @@
 		B12E2D0785DB111BB749DADE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				306E0D3C0B775E80704140AB /* Pods-OSX.debug.xcconfig */,
-				6AC1184E322E9E9A527BB7F2 /* Pods-OSX.release.xcconfig */,
 				C1A38E2241235B1ED6C49AA4 /* Pods-iOS.debug.xcconfig */,
 				84D89B88F76BCB31A1B27F96 /* Pods-iOS.release.xcconfig */,
-				EBA828893B1A8F67C4BBEE0F /* Pods-watchOS.debug.xcconfig */,
-				B86FF3BB211A024B2AE48AD1 /* Pods-watchOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
