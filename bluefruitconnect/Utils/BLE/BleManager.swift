@@ -183,7 +183,8 @@ class BleManager : NSObject, CBCentralManagerDelegate {
     func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral,  advertisementData: [String : AnyObject], RSSI: NSNumber) {
         
         let identifierString = peripheral.identifier.UUIDString
-        //DLog("didDiscoverPeripheral \(peripheral.name)")
+//        DLog("didDiscoverPeripheral \(peripheral.name)")
+        
         synchronize(blePeripheralsFound) {
             if let existingPeripheral = self.blePeripheralsFound[identifierString] {
                 // Existing peripheral. Update advertisement data because each time is discovered the advertisement data could miss some of the keys (sometimes a sevice is there, and other times has dissapeared)
