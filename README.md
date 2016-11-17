@@ -1,29 +1,18 @@
-# Bluefruit LE Connect v2
+# Bluefruit LE Connect v2 MINIMIZED!
 
-iOS and OS X app for use with Bluefruit Bluetooth LE modules and dev boards from Adafruit.
+Hola everyone!
 
-This is version 2.0 of the app.  The source code for version 1.0 (iOS only) is available at [Bluefruit_LE_Connect](https://github.com/adafruit/Bluefruit_LE_Connect).
+This is a super simplified version of the Bluefruit LE Connect v2 iOS app from Adafruit. https://github.com/adafruit/Bluefruit_LE_Connect_v2
 
-**Important:** Open this project in Xcode by using the .xcworkspace file and not the .xcodeproj file
+## Make it work
 
-Work in progress!
+To connect to your BLE module from your iOS device you only need to:
 
-## Supported Hardware
+**1.** Find the UUID of your desired BLE module just by running this app on your iPhone or iPad (with bluetooth on), the UUIDs will appear printed on the console. **Important:** Open this project in Xcode by using the .xcworkspace file and not the .xcodeproj file
+**2.** Set the desired UUID (yourUUID variable) on the viewDidLoad method of the ViewController.swift file.
 
-Adafruit invests time and resources providing this open source code, please support Adafruit and open-source hardware by purchasing products from Adafruit!
+## Questions
 
-This application works with the following Bluefruit LE devices from Adafruit:
+Any questions I will try my best to respond in less than 24 hours. I don't care how stupid you think your questions could be, I want to help you make this work.
 
-- [Bluefruit LE Friend](https://www.adafruit.com/product/2267)
-- [Bluefruit LE UART Friend](https://www.adafruit.com/product/2479)
-- [Bluefruit LE SPI Friend](https://www.adafruit.com/product/2633)
-- [Bluefruit LE Shield](https://www.adafruit.com/products/2746)
-- [Bluefruit LE Micro](https://www.adafruit.com/product/2661) (Retired)
-- [Feather 32u4 Bluefruit LE](https://www.adafruit.com/product/2829)
-- [Feather M0 Bluefruit LE](https://www.adafruit.com/products/2995)
-
-## License
-
-Unless otherwise specified, all files produced by Adafruit are covered by an [MIT license](https://github.com/adafruit/Bluefruit_LE_Connect_Android/blob/master/license.txt).
-
-Files produced by Nordic Semiconductors are covered by their own license terms, as detailed in the file headers and appropriate folders. Please carefully review the license requirements before using this source code in your own application.
+- Current version: Xcode 7.3.1, Swift 2.2

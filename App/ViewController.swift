@@ -11,8 +11,7 @@ import UIKit
 class ViewController: UIViewController
 {
     //Your BLE UUID
-//    private let yourUUID = "4B7754C0-5F9B-8CE3-EF73-322C585373DE"
-    private let yourUUID = "BD55E1A5-9E0B-F7B8-A113-6EA26EDBF2B1"
+    private var yourUUID: String?
 
     //UI
     @IBOutlet var statusBLELabel: UILabel!
@@ -28,8 +27,22 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         
+        //Example:
+        //yourUUID = "8A66A06B-53A4-4852-A7E9-A59630652885"
+        
+        if yourUUID  == nil{
+            
+            let alert = UIAlertView()
+            alert.title = "Alert"
+            alert.message = "Set your BLE module UUID on the viewDidLoad method on the file ViewController.swift. You should be able to see the UUIDs printed on the console. Make sure not to run the app on the simulator, rather run it on an iPhone or iPad with bluetooth"
+            alert.addButtonWithTitle(":-)")
+            alert.show()
+            
+        }
+        
         // Start scanning
         BleManager.sharedInstance.startScan()
+
     }
     
     override func viewWillAppear(animated: Bool)
@@ -83,8 +96,21 @@ class ViewController: UIViewController
         //Connecting, not connected
         if(BleManager.sharedInstance.blePeripheralConnecting == nil){
 //            print(peripheralList)
-            if(peripheralList.blePeripherals.contains(yourUUID)){
-                peripheralList.connectToPeripheral(yourUUID)
+            
+            //Debugging
+            let bleManager = BleManager.sharedInstance
+            let blePeripheralsFound = bleManager.blePeripherals()
+            for i in 0..<peripheralList.blePeripherals.count {
+                let selectedBlePeripheralIdentifier = peripheralList.blePeripherals[i];
+                if let blePeripheral = blePeripheralsFound[selectedBlePeripheralIdentifier] {
+                    print("Peripheral")
+                    print(blePeripheral.name)
+                    print(peripheralList.blePeripherals[i])
+                }
+            }
+            
+            if(peripheralList.blePeripherals.contains(yourUUID!)){
+                peripheralList.connectToPeripheral(yourUUID!)
             }
         }
     }
