@@ -28,7 +28,7 @@ class ViewController: UIViewController
         super.viewDidLoad()
         
         //Example:
-        //yourUUID = "8A66A06B-53A4-4852-A7E9-A59630652885"
+        yourUUID = "1B3BC628-2E20-42F2-808C-6B762E7E7C1F"
         
         if yourUUID  == nil{
             
@@ -101,6 +101,7 @@ class ViewController: UIViewController
             let bleManager = BleManager.sharedInstance
             let blePeripheralsFound = bleManager.blePeripherals()
             for i in 0..<peripheralList.blePeripherals.count {
+                
                 let selectedBlePeripheralIdentifier = peripheralList.blePeripherals[i];
                 if let blePeripheral = blePeripheralsFound[selectedBlePeripheralIdentifier] {
                     print("Peripheral")
@@ -109,9 +110,12 @@ class ViewController: UIViewController
                 }
             }
             
-            if(peripheralList.blePeripherals.contains(yourUUID!)){
-                peripheralList.connectToPeripheral(yourUUID!)
+            if let _ = yourUUID {
+                if(peripheralList.blePeripherals.contains(yourUUID!)){
+                    peripheralList.connectToPeripheral(yourUUID!)
+                }
             }
+            
         }
     }
     

@@ -8,7 +8,8 @@ This is a super simplified version of the Bluefruit LE Connect v2 iOS app from A
 
 To connect to your BLE module from your iOS device you only need to:
 
-**1.** Find the UUID of your desired BLE module just by running this app on your iPhone or iPad (with bluetooth on), the UUIDs will appear printed on the console. **Important:** Open this project in Xcode by using the .xcworkspace file and not the .xcodeproj file
+**1.** Find the UUID of your desired BLE module just by running this app on your iPhone or iPad (with bluetooth on), the UUIDs will appear printed on the console. **Important:** Open this project in Xcode by using the .xcworkspace file and not the .xcodeproj file.
+
 **2.** Set the desired UUID (yourUUID variable) on the viewDidLoad method of the ViewController.swift file.
 
 ## Questions
