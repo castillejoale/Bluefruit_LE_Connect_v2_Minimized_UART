@@ -28,7 +28,7 @@ class ViewController: UIViewController
         super.viewDidLoad()
         
         //Example:
-        yourUUID = "1B3BC628-2E20-42F2-808C-6B762E7E7C1F"
+//        yourUUID = "1B3BC628-2E20-42F2-808C-6B762E7E7C1F"
         
         if yourUUID  == nil{
             
